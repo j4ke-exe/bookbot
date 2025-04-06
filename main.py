@@ -1,7 +1,9 @@
-def main(get_book_text):
-   with open("/books/frakenstein.txt") as f:
-      file_contents = f.read()
-      print(file_contents)
-
-if __name__ == "__main__":
-   main()
+def main():
+   book_text = get_book_text("/books/frankenstein.txt")
+   print(book_text)
+   
+def get_book_text(filepath):
+   with open(filepath, "r") as f:
+      return f.read()
+   
+main()
