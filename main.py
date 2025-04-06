@@ -11,7 +11,8 @@ def main():
 
     print("\nCharacter frequencies (A–Z):")
     for item in sorted_chars:
-        print(f"The '{item['char']}' character was found {item['count']} times")
+        if item["char"].isalpha():
+            print(f"{item['char']}: {item['count']}")
 
 def get_book_text(filepath):
     with open(filepath, "r") as f:
