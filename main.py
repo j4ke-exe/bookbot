@@ -1,5 +1,5 @@
 def main():
-   book_text = get_book_text("/books/frankenstein.txt")
+   book_text = get_book_text("books/frankenstein.txt")
    print(book_text)
    
 def get_book_text(filepath):
